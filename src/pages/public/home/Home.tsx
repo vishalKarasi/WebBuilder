@@ -1,13 +1,14 @@
 import "./home.scss";
 import { lazy } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import Insight from "@src/widgets/home/insight/Insight";
-import Navlink from "@components/navlink/Navlink";
-import Breadcrumbs from "@src/components/breadcrumb/Breadcrumbs";
-import Singup from "@src/widgets/home/signup/Singup";
+import Insight from "@widgets/home/insight/Insight.tsx";
+import Navlink from "@components/navlink/Navlink.tsx";
+import Breadcrumbs from "@components/breadcrumb/Breadcrumbs.tsx";
+import Singup from "@widgets/home/signup/Singup.tsx";
 
 const Index = lazy(() => import("./Index.tsx"));
 const Tools = lazy(() => import("./Tools.tsx"));
+const AwsBuilder = lazy(() => import("./AwsBuilder.tsx"));
 
 function Home() {
   const TabsLinks = [
@@ -32,6 +33,7 @@ function Home() {
       <Routes>
         <Route index element={<Index />} />
         <Route path="tools" element={<Tools />} />
+        <Route path="aws-builder" element={<AwsBuilder />} />
       </Routes>
       <Outlet />
       <Singup />

@@ -1,5 +1,5 @@
 import "./insight.scss";
-import { Check, Info } from "@src/assets/icons/icons";
+import { Check, Info } from "@src/assets/icons/icons.tsx";
 
 function Insight() {
   const countries = ["Top Relevant", "Most Popular", "Best Deals"];

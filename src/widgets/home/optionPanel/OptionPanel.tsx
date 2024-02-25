@@ -1,8 +1,8 @@
-import Button from "@components/button/Button";
 import "./optionPanel.scss";
 import graphic from "@assets/images/graphic.svg";
-import Rating from "@src/components/rating/Rating";
-import { TOption } from "./optionPanel.types";
+import Button from "@components/button/Button.tsx";
+import Rating from "@src/components/rating/Rating.tsx";
+import { TOption } from "./optionPanel.types.ts";
 
 function OptionPanel(props: TOption) {
   const { index, tag, caption, title, description, highlight, rating } = props;

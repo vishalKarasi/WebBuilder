@@ -1,7 +1,7 @@
-function Tools() {
+function AwsBuilder() {
   return (
     <section>
-      <h2>Tool page</h2>
+      <h2>Aws Builder page</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
         quas ab quasi dolore laborum, officia iste doloremque maiores culpa
@@ -26,4 +26,4 @@ function Tools() {
   );
 }
 
-export default Tools;
+export default AwsBuilder;

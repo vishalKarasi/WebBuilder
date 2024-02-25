@@ -13,7 +13,7 @@ function Carousel({ children }: TCarousel) {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: "auto" as const,
     initialSlide: 2,
     className: "swiper",
   };

@@ -1,5 +1,5 @@
 import "./button.scss";
-import { TButton } from "./button.types";
+import { TButton } from "./button.types.ts";
 
 function Button(props: TButton) {
   const { label, icon, type, disabled, onClick, className } = props;

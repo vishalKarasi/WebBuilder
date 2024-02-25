@@ -1,6 +1,6 @@
 import React from "react";
 import "./rating.scss";
-import { StarEmpty, StarFull, StarHalf } from "@src/assets/icons/icons";
+import { StarEmpty, StarFull, StarHalf } from "@src/assets/icons/icons.tsx";
 
 type TRating = {
   rating: number;

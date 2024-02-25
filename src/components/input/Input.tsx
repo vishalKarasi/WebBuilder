@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import "./input.scss";
-import { TInput } from "./input.types";
+import { TInput } from "./input.types.ts";
 
 function Input(props: TInput) {
   const { label, icon, errorMessage, pattern, ...input } = props;

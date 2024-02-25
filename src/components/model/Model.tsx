@@ -1,5 +1,5 @@
 import "./model.scss";
-import { TModel } from "./model.types";
+import { TModel } from "./model.types.ts";
 
 function Model(props: TModel) {
   const { type, message } = props;

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { TNavlink } from "./navlink.types";
+import { TNavlink } from "./navlink.types.ts";
 
 function Navlink(props: TNavlink) {
   const { label, icon, path } = props;

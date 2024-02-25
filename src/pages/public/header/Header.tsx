@@ -1,5 +1,4 @@
 import "./header.scss";
-import Navlink from "@src/components/navlink/Navlink";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Cancel,
@@ -9,6 +8,7 @@ import {
   Sun,
   Theme,
 } from "@src/assets/icons/icons.tsx";
+import Navlink from "@src/components/navlink/Navlink.tsx";
 import { setTheme, toggle, toggleMode } from "@app/services/uiSlice.ts";
 
 function Header() {

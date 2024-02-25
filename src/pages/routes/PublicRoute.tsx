@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { Outlet } from "react-router-dom";
-const Header = lazy(() => import("@pages/public/header/Header.jsx"));
-const Footer = lazy(() => import("@pages/public/footer/Footer.jsx"));
+const Header = lazy(() => import("@pages/public/header/Header.tsx"));
+const Footer = lazy(() => import("@pages/public/footer/Footer.tsx"));
 
 const PublicRoute = () => {
   return (

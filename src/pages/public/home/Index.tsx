@@ -1,7 +1,7 @@
-import OfferCard from "@widgets/home/offerCard/OfferCard";
-import OptionPanel from "@widgets/home/optionPanel/OptionPanel";
+import OfferCard from "@widgets/home/offerCard/OfferCard.tsx";
+import OptionPanel from "@widgets/home/optionPanel/OptionPanel.tsx";
 import { OptionPanelList, OfferCardList } from "@mock/data.ts";
-import Carousel from "@components/carousel/Carousel";
+import Carousel from "@components/carousel/Carousel.tsx";
 
 function Index() {
   return (

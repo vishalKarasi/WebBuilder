@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { createOfferApi, deleteOfferApi, getOffersApi, updateOfferApi } from "../api/offerApi";
-import { TOffer } from "@widgets/home/offerCard/offerCard.types";
-
+import { createOfferApi, deleteOfferApi, getOffersApi, updateOfferApi } from "../api/offerApi.ts";
+import { TOffer } from "@widgets/home/offerCard/offerCard.types.ts";
 
 type InitialState = {
   Offers: TOffer[],

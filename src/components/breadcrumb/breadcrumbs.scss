@@ -1,0 +1,10 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+
+  span {
+    scale: 1.2;
+  }
+}

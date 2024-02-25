@@ -1,0 +1,53 @@
+.singup {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block: 4em;
+  gap: 5em;
+
+  & > * {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    input {
+      background-color: var(--clr-box);
+      padding: 1em;
+      width: 100%;
+      border-top-left-radius: 1em;
+      border-bottom-left-radius: 1em;
+    }
+    button {
+      background-color: var(--clr-primary);
+      padding: 1em 1.5em;
+      border-top-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+      color: var(--clr-bg);
+
+      &:hover {
+        background-color: transparent;
+        box-shadow: 0 0 0.4em var(--clr-primary);
+        color: var(--clr-primary);
+      }
+    }
+  }
+}
+
+@media (width < 1000px) {
+  .singup {
+    flex-direction: column;
+    gap: 1em;
+
+    & > * {
+      width: 80%;
+    }
+  }
+}

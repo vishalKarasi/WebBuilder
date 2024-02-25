@@ -1,0 +1,27 @@
+.rating {
+  align-items: center;
+  justify-content: space-around;
+
+  ul {
+    background: #f3f9ff;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 1em;
+
+    li {
+      color: var(--clr-primary);
+      &:nth-child(1) {
+        font-size: 2em;
+      }
+
+      svg {
+        width: 2em;
+        height: 2em;
+        fill: #ffb80f;
+      }
+    }
+  }
+  button {
+    width: 100%;
+  }
+}

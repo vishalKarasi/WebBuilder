@@ -1,0 +1,67 @@
+@use "@src/utils.scss";
+
+.optionPanel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2em;
+  padding: 2em 1em;
+  background-color: var(--clr-box);
+
+  &::before {
+    content: attr(data-tag);
+    padding: 0.5em 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #ff7724;
+    color: var(--clr-bg);
+    position: absolute;
+    inset: -1em auto auto -0.5em;
+  }
+
+  &::after {
+    content: attr(data-index);
+    @extend .flex;
+    width: 3em;
+    height: 3em;
+    font: var(--font-link);
+    border-radius: 100vmax;
+    box-shadow: 0 0 0.4em var(--clr-shade);
+    background-color: var(--clr-box);
+    position: absolute;
+    inset: 3em auto auto -1.5em;
+  }
+
+  figure {
+    @extend .flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .info,
+  .rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+
+  .info {
+    details {
+      summary {
+        color: var(--clr-primary);
+      }
+
+      p {
+        padding: 1em;
+        background-color: #fff4ed;
+      }
+    }
+  }
+}
+
+@media (width < 900px) {
+  .optionPanel {
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+}

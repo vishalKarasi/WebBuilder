@@ -1,0 +1,37 @@
+.insight {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.5em;
+  border-block: 0.15em solid var(--clr-shade);
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+    font-size: 0.9em;
+
+    p {
+      display: flex;
+      gap: 0.5em;
+    }
+  }
+
+  select {
+    font-size: 0.9em;
+    padding: 0.75em;
+    background-color: transparent;
+  }
+}
+
+@media (width <= 840px) {
+  .insight {
+    flex-direction: column;
+    gap: 1em;
+
+    .left {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+}

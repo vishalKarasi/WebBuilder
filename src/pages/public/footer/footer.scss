@@ -1,0 +1,49 @@
+@use "@src/utils.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-font);
+  padding: 5em;
+  color: var(--clr-bg);
+
+  & > nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    a {
+      justify-content: flex-start;
+      color: var(--clr-bg);
+      opacity: 0.75;
+    }
+  }
+
+  select {
+    background: var(--clr-font);
+    padding: 0.75em;
+    color: var(--clr-bg);
+    box-shadow: 0 0 0.1em var(--clr-shade);
+  }
+}
+
+@media (width < 900px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 4em;
+
+    nav {
+      h2 {
+        text-align: center;
+      }
+      a {
+        justify-content: center;
+      }
+    }
+  }
+}

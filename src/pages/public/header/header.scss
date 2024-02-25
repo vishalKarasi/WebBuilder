@@ -1,0 +1,89 @@
+@use "@src/utils.scss";
+
+@mixin commonStyle {
+  gap: 1em;
+
+  .searchBar {
+    scale: 0.9;
+  }
+
+  nav {
+    position: fixed;
+    inset: auto -100% 0 auto;
+    width: 100%;
+    height: calc(100% - 4em);
+    background-color: var(--clr-font);
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  .options {
+    .menu {
+      display: flex;
+    }
+  }
+}
+
+.header {
+  position: sticky;
+  inset: 0 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: var(--clr-font);
+  color: var(--clr-bg);
+  z-index: 999;
+
+  .searchBar {
+    display: flex;
+    background-color: var(--clr-bg);
+    border-radius: 1em;
+    padding: 0.5em;
+
+    input {
+      padding-inline: 0.5em;
+    }
+  }
+
+  nav {
+    @extend .flex;
+    gap: 2em;
+
+    a {
+      color: var(--clr-bg);
+    }
+  }
+
+  .options {
+    @extend .flex;
+    gap: 1em;
+
+    svg {
+      width: 2em;
+      height: 2em;
+    }
+
+    .theme {
+      input[type="color"] {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  @media (420px < width <= 1000px) {
+    @include commonStyle;
+  }
+
+  @media (width <= 420px) {
+    flex-direction: column-reverse;
+    @include commonStyle;
+  }
+}

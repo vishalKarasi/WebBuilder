@@ -1,0 +1,38 @@
+@use "@src/utils.scss";
+
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  .head {
+    font-size: clamp(2em, calc(2rem + ((1vw - 0.2125em) * 1.4545)), 3em);
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    a {
+      background-color: var(--clr-box);
+      padding: 0.5em 1em;
+      border-radius: 0.5em;
+    }
+  }
+
+  .homeIndex {
+    flex-direction: column;
+    gap: 2em;
+
+    .optionContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      margin-bottom: 4em;
+    }
+
+    .offerContainer {
+    }
+  }
+}

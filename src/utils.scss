@@ -11,7 +11,7 @@
   --clr-font: hsl(0, 0%, 90%);
   --clr-bg: hsl(0, 0%, 20%);
   --clr-box: hsl(0, 0%, 25%);
-  --clr-shade: hsl(0, 0%, 30%);
+  --clr-shade: hsl(0, 0%, 50%);
 }
 
 //  clamp(14px, calc(0.875rem + ((1vw - 3.4px) * 0.1818)), 16px);
@@ -24,11 +24,10 @@
   --clr-invalid: hsl(348, 83%, 47%);
   --clr-valid: hsl(180, 100%, 25%);
 
-  --font-body: 400 clamp(14px, calc(0.875rem + ((1vw - 3.4px) * 0.1818)), 16px) /
-    1.5 open-sans;
+  --font-body: 400 clamp(14px, 1.5vw + 10px, 16px) / 1.5 open-sans;
   --font-link: 500 1.2rem/ 1 ubuntu;
-  --font-sub-head: 700 1.5rem/ 1.2 roboto;
-  --font-head: 800 1.75rem/ 1.1 poppins;
+  --font-sub-head: 700 2rem/ 1.2 roboto;
+  --font-head: 800 3rem/ 1.1 poppins;
 }
 
 .flex {

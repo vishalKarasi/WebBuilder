@@ -8,14 +8,14 @@ function OptionPanel(props: TOptionPanel) {
   const { index, tag, caption, title, description, highlight, rating } = props;
   return (
     <article className="optionPanel" data-tag={tag} data-index={index}>
-      <figure className="imgbox">
+      <figure className="imgBox">
         <img src={graphic} alt="graphic" />
         <figcaption>{caption}</figcaption>
       </figure>
       <div className="info">
-        <h2>{title}-</h2>
+        <h3>{title}-</h3>
         <p>{description}</p>
-        <h2>Main Highlights</h2>
+        <h3>Main Highlights</h3>
         <p>{highlight}</p>
         <details>
           <summary>Show more</summary>

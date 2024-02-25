@@ -32,7 +32,7 @@
     inset: 3em auto auto -1.5em;
   }
 
-  figure {
+  .imgBox {
     @extend .flex;
     flex-direction: column;
     gap: 1em;

@@ -1,5 +1,7 @@
 @use "./utils.scss";
 
+////////////////////////////// Reset ///////////////////////////////
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,10 @@ select {
   color: var(--clr-font);
 }
 
+option {
+  background-color: var(--clr-bg);
+}
+
 input,
 textarea {
   background-color: transparent;
@@ -37,6 +43,7 @@ main {
 
 section {
   display: flex;
+  flex-direction: column;
   margin-block: 2em;
   gap: 2em;
 }
@@ -48,6 +55,10 @@ h1 {
 
 h2 {
   font: var(--font-sub-head);
+}
+
+h3 {
+  font-size: 1.1em;
 }
 
 img {
@@ -88,7 +99,7 @@ a {
 
   &:hover {
     color: var(--clr-primary);
-    scale: 1.2;
+    scale: 1.15;
   }
 
   &.active {
@@ -119,5 +130,40 @@ span {
   color: var(--clr-primary);
 }
 
-// @media (800px < width <= 1500px) {
-// }
+////////////////////////////// Animation ///////////////////////////////
+@keyframes swiperIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+article {
+  animation: scaleIn 1.5s ease-in-out;
+}
+
+header,
+main,
+footer {
+  animation: swiperIn 0.5s ease-in-out;
+}
+
+////////////////////////////// Responsiveness ///////////////////////////////
+
+@media (width < 800px) {
+  main {
+    min-height: calc(100vh - 4em);
+    padding: 2vh 8vw;
+  }
+}

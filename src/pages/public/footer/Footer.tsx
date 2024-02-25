@@ -29,7 +29,7 @@ function Footer() {
   return (
     <footer className="footer">
       <nav>
-        <h2>Categories</h2>
+        <h3>Categories</h3>
         {CategoriesLinks.map((link) => (
           <NavLink key={link.label} to={link.path}>
             {link.label}
@@ -37,7 +37,7 @@ function Footer() {
         ))}
       </nav>
       <nav>
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         {ContactLinks.map((link) => (
           <NavLink key={link.label} to={link.path}>
             {link.label}

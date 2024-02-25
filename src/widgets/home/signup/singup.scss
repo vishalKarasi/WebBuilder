@@ -3,14 +3,10 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-block: 4em;
-  gap: 5em;
+  gap: 10em;
 
   & > * {
     width: 50%;
-  }
-
-  h2 {
-    font-size: 2.5em;
   }
 
   form {
@@ -47,7 +43,8 @@
     gap: 1em;
 
     & > * {
-      width: 80%;
+      width: 100%;
+      justify-content: center;
     }
   }
 }

@@ -1,6 +1,6 @@
 export type TOptionPanel = {
   // imgUrl: string
-  index: number,
+  index?: number,
   tag: string;
   caption: string;
   title: string;

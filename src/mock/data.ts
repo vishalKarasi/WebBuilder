@@ -1,7 +1,7 @@
-import { TOfferCard } from "@src/widgets/home/offerCard/offerCard.types";
-import { TOptionPanel } from "@src/widgets/home/optionPanel/optionPanel.types";
+import { TOffer } from "@src/widgets/home/offerCard/offerCard.types";
+import { TOption } from "@src/widgets/home/optionPanel/optionPanel.types";
 
-export const OptionPanelList: TOptionPanel[] = [
+export const OptionPanelList: TOption[] = [
   {
     tag: "Best Choice",
     caption: "Graphic",
@@ -34,7 +34,7 @@ export const OptionPanelList: TOptionPanel[] = [
   },
 ];
 
-export const OfferCardList: TOfferCard[] = [
+export const OfferCardList: TOffer[] = [
   {
     tag: ["20% off", "Limited Time"],
     title: "Seo Optimiser",
@@ -52,11 +52,27 @@ export const OfferCardList: TOfferCard[] = [
     discount: 40,
   },
   {
+    tag: ["20% off", "Limited Time"],
+    title: "Seo Optimiser",
+    description: "Computer  Modern clasic with wix support",
+    discountPrice: 30,
+    price: 50,
+    discount: 40,
+  },
+  {
     tag: ["New Release", "Limited Stock"],
     title: "E-commerce Power Suite",
     description: "All-in-one solution for building and scaling your online store",
     discountPrice: 75,
     price: 100,
     discount: 25,
-  }
+  },
+  {
+    tag: ["20% off", "Limited Time"],
+    title: "Seo Optimiser",
+    description: "Computer  Modern clasic with wix support",
+    discountPrice: 30,
+    price: 50,
+    discount: 40,
+  },
 ];

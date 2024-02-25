@@ -1,5 +1,6 @@
-export type TOfferCard = {
+export type TOffer = {
   // imageUrl: string;
+  _id?: number,
   tag: string[];
   title: string;
   description: string;

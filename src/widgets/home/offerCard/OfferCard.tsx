@@ -1,9 +1,9 @@
 import "./offerCard.scss";
 import graphic from "@assets/images/graphic.svg";
-import { TOfferCard } from "./offerCard.types";
+import { TOffer } from "./offerCard.types";
 import Button from "@components/button/Button";
 
-function OfferCard(props: TOfferCard) {
+function OfferCard(props: TOffer) {
   const { tag, title, description, discountPrice, price, discount } = props;
   return (
     <article className="offerCard">

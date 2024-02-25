@@ -1,4 +1,4 @@
-export type TOptionPanel = {
+export type TOption = {
   // imgUrl: string
   index?: number,
   tag: string;

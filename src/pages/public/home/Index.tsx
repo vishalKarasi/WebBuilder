@@ -1,6 +1,7 @@
-import OfferCard from "@src/widgets/home/offerCard/OfferCard";
+import OfferCard from "@widgets/home/offerCard/OfferCard";
 import OptionPanel from "@widgets/home/optionPanel/OptionPanel";
 import { OptionPanelList, OfferCardList } from "@mock/data.ts";
+import Carousel from "@components/carousel/Carousel";
 
 function Index() {
   return (
@@ -11,10 +12,12 @@ function Index() {
         ))}
       </div>
       <h2 className="subHead">Related deals you might like for</h2>
-      <div className="offerContainer">
-        {OfferCardList.map((item, index) => (
-          <OfferCard key={index} {...item} />
-        ))}
+      <div className="flex">
+        <Carousel>
+          {OfferCardList.map((item, index) => (
+            <OfferCard key={index} {...item} />
+          ))}
+        </Carousel>
       </div>
     </section>
   );

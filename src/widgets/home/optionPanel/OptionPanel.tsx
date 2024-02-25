@@ -2,9 +2,9 @@ import Button from "@components/button/Button";
 import "./optionPanel.scss";
 import graphic from "@assets/images/graphic.svg";
 import Rating from "@src/components/rating/Rating";
-import { TOptionPanel } from "./optionPanel.types";
+import { TOption } from "./optionPanel.types";
 
-function OptionPanel(props: TOptionPanel) {
+function OptionPanel(props: TOption) {
   const { index, tag, caption, title, description, highlight, rating } = props;
   return (
     <article className="optionPanel" data-tag={tag} data-index={index}>

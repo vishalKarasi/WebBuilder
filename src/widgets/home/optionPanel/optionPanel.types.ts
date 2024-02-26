@@ -1,7 +1,7 @@
 export type TOption = {
   // imgUrl: string
   index?: number,
-  tag: string;
+  tag?: string;
   caption: string;
   title: string;
   description: string;

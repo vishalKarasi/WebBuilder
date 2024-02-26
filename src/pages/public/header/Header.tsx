@@ -9,14 +9,19 @@ import {
   Theme,
 } from "@src/assets/icons/icons.tsx";
 import Navlink from "@src/components/navlink/Navlink.tsx";
-import { setTheme, toggle, toggleMode } from "@app/services/uiSlice.ts";
+import {
+  setSearchQuery,
+  setTheme,
+  toggle,
+  toggleMode,
+} from "@app/services/uiSlice.ts";
 import { useLocation } from "react-router-dom";
 
 function Header() {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
-
   const { theme, mode, menu } = useSelector((state: any) => state.ui);
+
   const NavLinks = [
     { label: "Categories", path: "/categories" },
     { label: "Web Builders", path: "/web-builders" },
@@ -26,7 +31,10 @@ function Header() {
     <header className="header">
       <div className="searchBar">
         <Search />
-        <input type="search" />
+        <input
+          type="search"
+          onChange={(e) => dispatch(setSearchQuery(e.target.value))}
+        />
       </div>
 
       <nav className={menu ? "active" : ""}>

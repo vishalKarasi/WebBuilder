@@ -8,7 +8,7 @@
   padding: 2em 1em;
   background-color: var(--clr-box);
 
-  &::before {
+  &[data-tag]:not([data-tag=""])::before {
     content: attr(data-tag);
     padding: 0.5em 1em;
     border-top-right-radius: 1em;

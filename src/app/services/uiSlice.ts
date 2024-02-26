@@ -5,6 +5,7 @@ type InitialState = {
   theme: string;
   popup: boolean;
   menu: boolean;
+  searchQuery: string,
 }
 
 type UiAction = "popup" | "menu";
@@ -20,6 +21,7 @@ const initialState: InitialState = {
   theme: "crimson",
   popup: false,
   menu: false,
+  searchQuery: "",
 };
 
 export const uiSlice = createSlice({
@@ -41,9 +43,13 @@ export const uiSlice = createSlice({
       const payload = action.payload;
         state[payload] = !state[payload];
     },
+
+    setSearchQuery(state, { payload }) {
+      state.searchQuery = payload;
+   }
   },
 });
 
-export const { toggleMode, setTheme, toggle } =
+export const { toggleMode, setTheme, toggle, setSearchQuery } =
   uiSlice.actions;
 export default uiSlice.reducer;

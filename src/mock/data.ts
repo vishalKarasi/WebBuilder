@@ -32,6 +32,15 @@ export const OptionPanelList: TOption[] = [
       "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
     rating: 4.5,
   },
+  {
+    caption: "Design",
+    title: "CDK Resposive Builder-",
+    description:
+      "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores(Black/ Blue)",
+    highlight:
+      "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
+    rating: 1,
+  },
 ];
 
 export const OfferCardList: TOffer[] = [

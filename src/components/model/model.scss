@@ -18,9 +18,9 @@
   @extend .flex;
   grid-column: 1/-1;
   height: calc(100dvh - 4rem);
-  font-size: 1.5em;
+  font-size: 3em;
   font-family: roboto;
-  color: red;
+  color: crimson;
 }
 
 @keyframes spin {

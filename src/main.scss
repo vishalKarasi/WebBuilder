@@ -37,6 +37,9 @@ textarea {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   min-height: calc(100vh - 4em);
   padding: 4vh 10vw;
 }

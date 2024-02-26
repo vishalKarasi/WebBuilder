@@ -10,9 +10,12 @@ import {
 } from "@src/assets/icons/icons.tsx";
 import Navlink from "@src/components/navlink/Navlink.tsx";
 import { setTheme, toggle, toggleMode } from "@app/services/uiSlice.ts";
+import { useLocation } from "react-router-dom";
 
 function Header() {
   const dispatch = useDispatch();
+  const { pathname } = useLocation();
+
   const { theme, mode, menu } = useSelector((state: any) => state.ui);
   const NavLinks = [
     { label: "Categories", path: "/categories" },
@@ -27,6 +30,7 @@ function Header() {
       </div>
 
       <nav className={menu ? "active" : ""}>
+        {pathname !== "/home" && <Navlink label="Home" path="/home" />}
         {NavLinks.map((link) => (
           <Navlink key={link.label} {...link} />
         ))}

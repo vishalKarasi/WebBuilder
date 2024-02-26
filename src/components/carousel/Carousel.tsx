@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import "swiper/css/effect-coverflow";
 
 import "./carousel.scss";
 import { TCarousel } from "./carousel.types.ts";

@@ -1,6 +1,7 @@
 import "./home.scss";
 import { lazy } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
+
 import Insight from "@widgets/home/insight/Insight.tsx";
 import Navlink from "@components/navlink/Navlink.tsx";
 import Breadcrumbs from "@components/breadcrumb/Breadcrumbs.tsx";

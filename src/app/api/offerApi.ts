@@ -1,4 +1,4 @@
-import { TOffer } from "@src/widgets/home/offerCard/offerCard.types.ts";
+import { TOffer } from "@widgets/home/offerCard/offerCard.types.ts";
 import { privateAxios, publicAxios } from "./serverApi.ts";
 
 export const getOfferByIdApi = (id: number) => {

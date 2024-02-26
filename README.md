@@ -14,6 +14,21 @@ To run WebBuilder locally, follow these steps:
 2. Run `npm install` to install dependencies.
 3. Execute `npm run dev` to start the development server.
 
+## Folder Structure Info
+
+- **app:**
+
+  - **api:** Contains the API-related code.
+  - **services:** Houses features-based code.
+
+- **components:** Holds globally reusable code
+
+- **mock:** Contains data used to render option panels and offer cards.
+
+- **pages:** Includes main pages with their respective nested routes.
+
+- **widgets:** Consists of components specific to particular pages or routes.
+
 ## Features
 
 - Mode and Theme Change Feature
@@ -36,6 +51,7 @@ WebBuilder adheres to the following best practices:
 
 ## Dependencies
 
+- [@reduxjs/toolkit](https://redux-toolkit.js.org/) - Used for State Management
 - [Swiper.js](https://swiperjs.com) - Used for the carousel component.
 
 ## Known Issues

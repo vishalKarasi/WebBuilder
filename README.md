@@ -1,6 +1,6 @@
 # WebBuilder
 
-WebBuilder is a web application developed as an assignment for an internship. It includes features such as dynamic custom breadcrumbs, a rating component, mode and theme change options, and a carousel for offer cards implemented in React and SCSS.
+WebBuilder is a web application developed as an assignment for an internship. It includes features such as mode and theme change options, dynamic custom breadcrumbs, a rating component and filtering for option panels, and a carousel for offer cards implemented in React and SCSS.
 
 ## Demo
 
@@ -16,9 +16,10 @@ To run WebBuilder locally, follow these steps:
 
 ## Features
 
+- Mode and Theme Change Feature
 - Dynamic Custom Breadcrumbs
 - Custom Rating Component for Option Panels
-- Mode and Theme Change Feature
+- Filtering for the same Option Panels
 - Carousel for Offer Cards
 - Animations
 - Fully Responsive

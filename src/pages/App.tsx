@@ -1,6 +1,6 @@
 import { lazy, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 const PublicRoute = lazy(() => import("./routes/PublicRoute.tsx"));
 const Home = lazy(() => import("./public/home/Home.tsx"));
@@ -17,6 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route element={<PublicRoute />}>
           <Route path="/home/*" element={<Home />} />
           <Route path="/Categories/*" element={<Categories />} />

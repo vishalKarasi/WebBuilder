@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
-    "@types/axios": "^0.14.0",
     "axios": "^1.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,6 +20,7 @@
     "swiper": "^11.0.6"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "^20.11.20",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",

@@ -1,7 +1,10 @@
+import Breadcrumbs from "@src/components/breadcrumb/Breadcrumbs";
+
 function Categories() {
   return (
     <main>
-      <h2>Categories page</h2>
+      <Breadcrumbs />
+      <h1>Categories page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
         quas ab quasi dolore laborum, officia iste doloremque maiores culpa

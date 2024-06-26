@@ -9,7 +9,6 @@ import { TCarousel } from "./carousel.types.ts";
 
 function Carousel({ children }: TCarousel) {
   const swiperConfig = {
-    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto" as const,

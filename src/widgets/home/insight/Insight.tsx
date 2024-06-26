@@ -2,7 +2,7 @@ import "./insight.scss";
 import { Check, Info } from "@assets/icons/icons.tsx";
 
 function Insight() {
-  const countries = ["Top Relevant", "Most Popular", "Best Deals"];
+  const filters = ["Top Relevant", "Most Popular", "Best Deals"];
   return (
     <summary className="insight">
       <div className="left">
@@ -17,7 +17,7 @@ function Insight() {
         </p>
       </div>
       <select>
-        {countries.map((country) => (
+        {filters.map((country) => (
           <option key={country} value={country}>
             {country}
           </option>

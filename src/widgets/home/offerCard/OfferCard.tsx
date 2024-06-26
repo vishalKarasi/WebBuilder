@@ -23,11 +23,7 @@ function OfferCard(props: TOffer) {
           <li>${price}</li>
           <li>({discount}% off)</li>
         </ul>
-        <Button
-          label="View Deals"
-          type="button"
-          className="btnPrimary"
-        ></Button>
+        <Button label="View Deals" type="button" className="btnPrimary" />
       </div>
     </article>
   );
